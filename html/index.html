@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Importa la librería de iconos Boxicons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="../css/index.css">
+</head>
+<body onload="showTab('Inicio')">
+
+<!-- Contenedor para centrar y ajustar el contenido -->
+<div class="container">
+
+  <!-- Barra de navegación -->
+  <div class="navbar clearfix">
+    <a href="javascript:void(0)" class="tablinks left" onclick="openCity(event, 'Login')"><i class='bx bxs-user-circle'></i>Iniciar sesión</a>
+    <a href="javascript:void(0)" class="tablinks right" onclick="openCity(event, 'Contacto')">CONTACTO</a>
+    <a href="javascript:void(0)" class="tablinks right" onclick="openCity(event, 'Nosotros')">NOSOTROS</a>
+    <a href="javascript:void(0)" class="tablinks right" onclick="openCity(event, 'Reserva')">RESERVA</a>
+    <a href="javascript:void(0)" class="tablinks right" onclick="openCity(event, 'Tours')">TOURS</a>
+    <a href="javascript:void(0)" class="tablinks right" onclick="openCity(event, 'Inicio')">INICIO</a>
+  </div>
+
+  <!--Pestaña de INICIO-->
+  <div id="Inicio" class="tabcontent">
+    <!-- Encabezado con imagen de fondo -->
+    <div class="header">
+      <img src="https://transantin.cl/wp-content/uploads/2023/02/vina-del-mar.jpg" 
+      alt="Hotel Veranum" width="100%" height="600px">
+      <div class="overlay">
+        <h1>HOTEL VERANUM</h1>
+        <div class="search-container">
+          <div class="search-box">
+              <input type="text" class="search-input" placeholder="Buscar...">
+              <span class="search-icon"><i class='bx bx-search'></i></span>
+          </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!--Pestaña de TOURS-->
+  <div id="Tours" class="tabcontent">
+    <div class="header">
+      <div class="aspect-ratio-container">
+        <img src="https://transantin.cl/wp-content/uploads/2023/02/vina-del-mar.jpg" alt="Image">
+      </div>
+      <div class="overlay">
+        <h1>HOTEL VERANUM</h1>
+      </div>
+    </div>
+    <h3>Tours</h3>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('santiago')"> Santiago</button>
+      <button class="btn" onclick="filterSelection('quinta')"> Quinta Región</button>
+    </div>
+
+    <div class="container_tours">
+      <div class="filterDiv santiago show">
+        <img src="/img/templo_bahai.png" alt="Templo Bahai">
+        <div>Templo Bahai</div>
+      </div>
+      <div class="filterDiv santiago show">
+        <img src="/img/plaza_armas.png" alt="Plaza de Armas">
+        <div>Plaza de Armas</div>
+      </div>
+      <div class="filterDiv santiago show">
+        <img src="/img/teleferico.png" alt="Telefericos">
+        <div>Telefericos</div>
+      </div>
+      <div class="filterDiv santiago show">
+        <img src="/img/Portillo.png" alt="Portillo y Laguna del Inca">
+        <div>Another Place</div>
+      </div>
+      <div class="filterDiv quinta">
+        <img src="/img/Viña_Del_Mar_Clock.jpg" alt="Reloj de Flores">
+        <div>Reloj de Flores</div>
+      </div>
+      <div class="filterDiv quinta">
+        <img src="/img/castillo.png" alt="Castillo Wulff">
+        <div>Castillo Wulff</div>
+      </div>
+      <div class="filterDiv quinta">
+        <img src="/img/funiculares.jpg" alt="Funiculares Valparaíso">
+        <div>Funiculares Valparaíso</div>
+      </div>
+      <div class="filterDiv quinta">
+        <img src="/img/arte_urbano.png" alt="Arte Urbano">
+        <div>Arte Urbano</div>
+      </div>
+      <!-- Agregar mas-->
+    </div>
+  </div>
+  
+
+  <!--Pestañas de RESERVA-->
+  <div id="Reserva" class="tabcontent">
+    <div class="header">
+      <div class="aspect-ratio-container">
+        <img src="https://transantin.cl/wp-content/uploads/2023/02/vina-del-mar.jpg" alt="Image">
+      </div>
+      <div class="overlay">
+        <h1>HOTEL VERANUM</h1>
+      </div>
+    </div>
+    <h3>Tours</h3>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('santiago')"> Santiago</button>
+      <button class="btn" onclick="filterSelection('quinta')"> Quinta Región</button>
+    </div>
+
+    <div class="container_tours">
+      <div class="filterDiv santiago show">
+        <img src="/img/hotel1.jpg" alt="Templo Bahai">
+        <div>Templo Bahai</div>
+      </div>
+      <div class="filterDiv santiago show">
+        <img src="/img/hotel2.png" alt="Plaza de Armas">
+        <div>Plaza de Armas</div>
+      </div>
+      <div class="filterDiv santiago show">
+        <img src="/img/hotel3.png" alt="Telefericos">
+        <div>Telefericos</div>
+      </div>
+      <div class="filterDiv santiago show">
+        <img src="/img/hotel4.png" alt="Portillo y Laguna del Inca">
+        <div>Another Place</div>
+      </div>
+      <div class="filterDiv quinta">
+        <img src="/img/hotel5.png" alt="Reloj de Flores">
+        <div>Reloj de Flores</div>
+      </div>
+      <div class="filterDiv quinta">
+        <img src="/img/hotel6.png" alt="Castillo Wulff">
+        <div>Castillo Wulff</div>
+      </div>
+      <!-- Agregar mas-->
+    </div>
+  </div> 
+
+  <div id="Nosotros" class="tabcontent">
+    <h3>Nosotros</h3>
+    <p>Conoce más sobre nosotros.</p>
+  </div>
+
+  <div id="Contacto" class="tabcontent">
+    <h3>Contacto</h3>
+    <p>Ponte en contacto con nosotros.</p>
+  </div>
+
+  <!--Pestaña de INCIAR SESION-->
+  <div id="Login" class="tabcontent">
+    <div class="header">
+      <div class="aspect-ratio-container">
+        <img src="https://transantin.cl/wp-content/uploads/2023/02/vina-del-mar.jpg" alt="Image">
+      </div>
+      <div class="overlay">
+        <h1>HOTEL VERANUM</h1>
+      </div>
+    </div>
+    <div class="container2-wrapper">
+      <div class="container2">
+        <form>
+          <input class="input_login" type="text" id="email" name="email" placeholder="Correo electrónico">
+          <input class="input_login" type="password" id="password" name="password" placeholder="Contraseña">
+          <p>¿Has olvidado tu contraseña?<a href="">Click aquí</a></p>
+          <button class="button" type="submit">Iniciar Sesión</button>
+          <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../js/index.js"></script>
+
+</body>
+</html>
